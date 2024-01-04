@@ -1,0 +1,30 @@
+.footer {
+    position: absolute;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background: #fff;
+    padding: 2% 10% 2% 15%;
+}
+.footer__addres {
+    color: #292929;
+    font-size: 1.1rem;
+}
+.footer__icons {
+    display: flex;
+}
+.footer__icon-item {
+    margin-right: 1rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.footer__icon-image  {
+    fill: #B3B3B3;
+    &:hover {
+        fill: #000000;
+    }
+}

@@ -1,0 +1,15 @@
+.icons {
+    display: flex; 
+    justify-content: space-between;
+    max-width: 54%; 
+}
+.icon__item {
+    display: flex;
+    align-items: center;
+}
+.icon__item-image {
+    margin-right: 0.6rem;
+}
+.icon__item-text {
+    max-width: 7rem;
+}

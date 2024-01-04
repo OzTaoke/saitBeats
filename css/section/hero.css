@@ -1,0 +1,56 @@
+.hero {
+  background: #F5F5F5;
+  position: relative;
+}
+.hero:after {
+  content: url(../../image/hero.png);
+  position: absolute;
+  right: 10%;
+  bottom: -2%;
+}
+
+.hero__conteiner {
+  background: url(../../image/headphones.png) bottom 50% right/50% no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.hero__main {
+  max-width: 40%;
+  text-align: left;
+}
+
+.hero__main-title {
+  text-align: left;
+  margin-bottom: 1.3rem;
+  line-height: 1.1;
+}
+
+.hero__main-text {
+  font-family: "Alegreya Sans", sans-serif;
+  max-width: 90%;
+  font-size: 1.3rem;
+  margin-bottom: 3.4rem;
+}

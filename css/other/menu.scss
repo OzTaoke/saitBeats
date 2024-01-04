@@ -1,0 +1,17 @@
+.menu__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.menu__block-item {
+    margin-right: 1.7rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.menu__block-link {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.1rem;
+}

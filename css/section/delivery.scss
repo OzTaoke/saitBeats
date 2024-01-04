@@ -1,0 +1,121 @@
+.delivery {
+    background: url(../../image/Untitled.png) center bottom no-repeat, #181818;
+    color: #fff;
+    padding-bottom: 5.3rem;
+    display: flex;
+    position: relative;
+}
+.delivery__conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.delivery__title {
+    color: inherit;
+    padding-top: 4.25rem;
+    margin-bottom: 3.4rem;
+}
+.delivery__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+}
+.delivery__column {
+    width: calc(50% - 0.8rem);
+}
+.delivery__block {
+    display: flex;
+    margin-bottom: 0.6rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.delivery__item {
+    flex: 1;
+    margin-right: 1rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.delivery__item-title {
+    margin-bottom: 0.2rem;
+}
+.delivery__item-input {
+    width: 100%;
+    height: 3.75rem;
+    border: 3px transparent solid;
+    border-radius: 5px;
+    &:focus {
+        border-color: #E01F3D;
+        outline: none;
+    }
+}
+.delivery__item-input--textarea {
+    height: 9.4rem;
+    resize: none;
+    margin-bottom: 1.25rem;
+}
+.delivery__select {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    &:nth-child(3) {
+        margin-bottom: 2.9rem;
+    }
+}
+.delivery__radio {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 1.1rem;
+    &:last-child {
+        margin-right: 0;
+        margin-top: 0.3rem;
+    }
+}
+.delivery__radio-input {
+    display: none;
+
+    &:checked ~ .delivery__radio-fake {
+        &::after {
+            display: block;
+        }
+    }
+}
+.delivery__radio-fake {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    position: relative; 
+    &::after {
+        content: '';
+        width: 0.8rem;
+        height: 0.8rem;
+        background: #E01F3D;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}
+.delivery__radio--check .delivery__radio-fake{
+    border-radius: 5px;
+    &::after {
+        background: url(../../image/checkmark.png) center center no-repeat;
+    }
+}
+.delivery__button {
+    & .button {
+        margin-right: 0.9rem;
+    }
+}
+
+.delivery__item-error {
+    color: #E01F3D;
+}

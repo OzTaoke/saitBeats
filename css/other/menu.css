@@ -1,0 +1,26 @@
+.menu__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+.menu__block-item {
+  margin-right: 1.7rem;
+}
+.menu__block-item:last-child {
+  margin-right: 0;
+}
+
+.menu__block-link {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.1rem;
+}

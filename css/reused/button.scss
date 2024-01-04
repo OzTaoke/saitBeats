@@ -1,0 +1,23 @@
+.button {
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    background: #E01F3D;
+    padding: 1.1rem 2.6rem;
+    border-radius: 35px;
+    text-transform: uppercase;
+    &:hover {
+        background: #CA1B36;
+    }
+}
+.button--reset {
+    color: #fff;
+    font-weight: 400;
+    text-transform: none;
+    background: transparent;
+    padding: 0;
+    &:hover {
+        background: transparent;
+        color: #E01F3D;
+    }
+}

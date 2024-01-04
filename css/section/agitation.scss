@@ -1,0 +1,66 @@
+.agitation {
+    display: flex;
+    padding-bottom: 6rem;
+    position: relative;
+}
+.agitation__conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.agitation__main {
+    padding-top: 6rem;
+    margin-bottom: 3.8rem;
+}
+.agitation__main-title {
+    margin-bottom: 1.1rem;
+}
+.agitation__main-text {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 60%;
+}
+.agitation__block {
+    display: flex;
+    justify-content: space-between;
+}
+.agitation__item {
+    text-align: center;
+    width: calc(100% / 3 - 2rem);
+    position: relative;
+    &:before {
+        content: url(../../image/Combined\ shape\ 2204.png);
+        position: absolute;
+        left: -20%;
+        top: 20%;
+    }
+    &:first-child::before {
+        content: '';
+    }
+}
+.agitation__icon {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    width: 8rem;
+    height: 8rem;
+    background: #F2F5F4;
+    border-radius: 50%;
+    position: relative;
+}
+.agitation__icon-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.agitation__item-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+.agitation__item-text {
+    color: #666666;
+    padding: 0 1rem 0 1rem;
+}

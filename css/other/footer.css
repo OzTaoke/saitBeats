@@ -1,0 +1,42 @@
+.footer {
+  position: absolute;
+  margin-top: -2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: #fff;
+  padding: 2% 10% 2% 15%;
+}
+
+.footer__addres {
+  color: #292929;
+  font-size: 1.1rem;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__icon-item {
+  margin-right: 1rem;
+}
+.footer__icon-item:last-child {
+  margin-right: 0;
+}
+
+.footer__icon-image {
+  fill: #B3B3B3;
+}
+.footer__icon-image:hover {
+  fill: #000000;
+}
