@@ -7,6 +7,12 @@
   display: flex;
   position: relative;
 }
+.delivery:before {
+  content: url(../../image/reviews.png);
+  position: absolute;
+  left: 10%;
+  top: -2%;
+}
 
 .delivery__conteiner {
   display: -webkit-box;

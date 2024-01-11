@@ -89,59 +89,6 @@
      
  })
 
- // слайдер
-//  const rightWhite = document.querySelector("#right--white");
-//  const leftWhite = document.querySelector("#left--white");
-//  const rightRed = document.querySelector("#right--red");
-//  const leftRed = document.querySelector("#left--red");
-//  const slider = document.querySelector("#slider");
-//  const computedStyle = window.getComputedStyle(slider);
-//  const items = document.querySelectorAll(".slider__version")
-
-//  const minRight = 0;
-//  const step = 100;
-//  const maxRight = (items.length - 1) * step;
-//  let currentRight = 0;
-
-//  leftWhite.addEventListener('click', e => {
-//      e.preventDefault();
-//      let currentRight = parseInt(computedStyle.right);
-//  if (currentRight < maxRight) { 
-//      currentRight += step;
-//      slider.style.right = `${currentRight}%`;
-//  }
-//  // slider.appendChild(slider.firstElementChild);
-//  })
-//  rightWhite.addEventListener('click', e => {
-//      e.preventDefault();
-//      let currentRight = parseInt(computedStyle.right);
-//  if (currentRight < maxRight) { 
-//      currentRight += step;
-//      slider.style.right = `${currentRight}%`;
-//  }
-//  // slider.appendChild(slider.firstElementChild);
-//  })
-
-//  rightRed.addEventListener('click', e => {
-//      e.preventDefault();
-//      let currentRight = parseInt(computedStyle.right);
-//  if (currentRight > minRight) { 
-//      currentRight = minRight;
-//      slider.style.right = `${currentRight}%`;
-//  }
-//  // slider.appendChild(slider.firstElementChild);
-//  });
-//  leftRed.addEventListener('click', e => {
-//      e.preventDefault();
-//      let currentRight = parseInt(computedStyle.right);
-//  if (currentRight > minRight) { 
-//      currentRight = minRight;
-//      slider.style.right = `${currentRight}%`;
-//  }
-//  // slider.appendChild(slider.firstElementChild);
-//  });
-
-
 //  отзывы
 
 $(document).ready(() => {
@@ -197,6 +144,101 @@ $('.team__content').click(e => {
         closeEveryItem(conteinerTeam);
         openItem($that);
     };
+});
+
+// вертикальный аккордеон
+
+// const openItemColors = itemsColors => {
+//     const conteinerColors = itemsColors.closest('.colors__item');
+//     const contentColors = conteinerColors.find('.colors__overflow');
+//     const textColors = contentColors.find('.colors__overflow-text');
+//     const reqWidth = textColors.width();
+
+//     conteinerColors.addClass('colors__item--active');
+//     contentColors.width(reqWidth);
+// };
+
+// const closeEveryItemColors = conteinerColors => {
+//     const itemsColors = conteinerColors.find('.colors__overflow');
+//     const itemsConteinerColors = conteinerColors.find('.colors__item');
+
+//     itemsConteinerColors.removeClass('colors__item--active');
+//     itemsColors.width(0); 
+// };
+
+// $('.colors__item').click(e => {
+//     const $thatColors = $(e.currentTarget);
+//     const conteinerColors = $thatColors.closest('.colors__blocks');
+//     const elemConteinerColors = $thatColors.closest(".colors__item");
+
+//     if(elemConteinerColors.hasClass('colors__item--active')) {
+//         closeEveryItemColors(conteinerColors);
+//     } else {
+//         closeEveryItemColors(conteinerColors);
+//         openItemColors($thatColors);
+//     };
+// });
+
+
+
+
+
+const mesureWidth = item => {
+    let reqItemWidth = 0;
+    const screenWidth = $(window).width();
+    const container = item.closest('.colors__blocks');
+    const buttonBlocks = container.find('.colors__button');
+    const buttonWidth = buttonBlocks.width() * buttonBlocks.length;
+
+    const textContainer = item.find('.colors__overflow-text');
+    const paddingLeft = parseInt(textContainer.css('padding-left'));
+    const paddingRight = parseInt(textContainer.css('padding-right'));
+
+    const isTablet = window.matchMedia("(max-width: 768px)").matches;
+    
+    if (isTablet) {
+        reqItemWidth = screenWidth - buttonWidth;
+    } else {
+        reqItemWidth = 400;
+    } 
+
+    return {
+        container: reqItemWidth,
+        textContainer: reqItemWidth - paddingLeft - paddingRight
+    }
+};
+
+const openItemColor = (item) => {
+    const hiddenContent = item.find('.colors__overflow');
+    const reqWidth = mesureWidth(item);
+    const textBlock = item.find('.colors__overflow-text');
+
+    item.addClass('colors__item--active');
+    hiddenContent.width(reqWidth.container);
+    textBlock.width(reqWidth.textContainer);
+};
+
+const closeItemColor = (conteiner) => {
+    const itemColor = conteiner.find('.colors__item');
+    const contentColor = conteiner.find('.colors__overflow');
+
+    itemColor.removeClass('colors__item--active');
+    contentColor.width(0);
+}
+
+$('.colors__button').on('click', (e) => {
+    const $thatColors = $(e.currentTarget);
+    const itemColors = $thatColors.closest('.colors__item');
+    const itemOpened = itemColors.hasClass('colors__item--active');
+    const conteiner = $thatColors.closest('.colors__blocks')
+
+    if(itemOpened) {
+        closeItemColor(conteiner);
+    } else {
+        closeItemColor(conteiner);
+        openItemColor(itemColors);
+    };
+
 });
 
 // слайдер

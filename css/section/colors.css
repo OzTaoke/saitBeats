@@ -1,0 +1,93 @@
+.colors {
+  background: url(../../image/Slider\ \(1\).png) center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.colors__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.colors__blocks {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colors__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colors__button {
+  font-size: 36px;
+  font-weight: 700;
+  width: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+
+.colors__button-text {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.colors__button--silver {
+  background: rgb(153, 153, 153);
+}
+
+.colors__button--black {
+  background: rgb(21, 21, 21);
+}
+
+.colors__button--red {
+  background: rgb(224, 31, 60);
+}
+
+.colors__overflow {
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+  width: 0;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: rgba(51, 53, 55, 0.9);
+}
+
+.colors__overflow-text {
+  font-family: Alegreya Sans;
+  line-height: 2rem;
+  padding: 2rem 2rem 0 2rem;
+}

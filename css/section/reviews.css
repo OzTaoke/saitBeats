@@ -5,12 +5,6 @@
   padding-bottom: 4rem;
   position: relative;
 }
-.reviews:after {
-  content: url(../../image/reviews.png);
-  position: absolute;
-  left: 10%;
-  bottom: -2%;
-}
 
 .reviews__conteiner {
   display: -webkit-box;

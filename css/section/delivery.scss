@@ -4,6 +4,12 @@
     padding-bottom: 5.3rem;
     display: flex;
     position: relative;
+    &:before {
+        content: url(../../image/reviews.png);
+        position: absolute;
+        left: 10%;
+        top: -2%;
+    }
 }
 .delivery__conteiner {
     display: flex;
