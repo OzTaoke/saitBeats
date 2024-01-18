@@ -1,6 +1,5 @@
 @media (max-width: 768px) {
   .section {
-    min-height: 1000px;
     height: 100%;
   }
   .header__contacts, .header__menu, .hero__icons {
@@ -151,22 +150,30 @@
   .delivery__button {
     text-align: center;
   }
-  .map {
-    height: 60vh;
-  }
-  .map__image {
-    height: 60vh;
-  }
   .footer {
     height: 15vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .footer__addres {
     font-size: 1.3rem;
     color: #000;
+  }
+  .player {
+    padding: 2rem;
+  }
+  .player__block {
+    max-width: 30rem;
+  }
+  #myvideo {
+    width: 480px;
+    height: 360px;
+  }
+  .player__start, .player__paused {
+    width: 1.5rem;
+  }
+  .colors {
+    min-height: 940px;
   }
 }
 @media (max-width: 480px) {
@@ -174,8 +181,7 @@
     font-size: 14px;
   }
   .section {
-    min-height: 800px;
-    height: 100%;
+    width: 100vw;
   }
   .title {
     font-size: 2rem;
@@ -241,11 +247,7 @@
             justify-content: center;
   }
   .map {
-    min-height: 400px;
-    height: 50%;
-  }
-  .map__image {
-    height: 50vh;
+    min-height: 633px;
   }
   .footer {
     -webkit-box-orient: vertical;
@@ -253,10 +255,43 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    height: 20%;
   }
   .footer__addres, .footer__contacts {
     margin-bottom: 1rem;
+  }
+  .player__block {
+    max-width: 22.9rem;
+  }
+  #myvideo {
+    width: 320px;
+    height: 240px;
+  }
+  .player__start, .player__paused {
+    width: 2.5rem;
+  }
+  .colors {
+    min-height: 634px;
+  }
+  .player {
+    min-height: 511px;
+  }
+  .reviews {
+    min-height: 800px;
+  }
+  .team {
+    min-height: 756px;
+  }
+  .slider {
+    min-height: 816px;
+  }
+  .agitation {
+    min-height: 707px;
+  }
+  .hero {
+    min-height: 800px;
+  }
+  .delivery {
+    min-height: 766px;
   }
 }
 @media (max-width: 320px) {

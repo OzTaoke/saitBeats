@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 100%;
 }
 
 * {
@@ -18,6 +19,7 @@ body {
   font-weight: 400;
   color: #292929;
   font-family: "Play", sans-serif;
+  height: 100%;
 }
 
 .body__closed {
@@ -41,10 +43,22 @@ input {
 
 .wrapper {
   max-width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
 }
 
 .conteiner {

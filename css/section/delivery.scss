@@ -4,11 +4,11 @@
     padding-bottom: 5.3rem;
     display: flex;
     position: relative;
-    &:before {
-        content: url(../../image/reviews.png);
+    &::before {
+        content: url(../../image/Polygon\ 2.png);
         position: absolute;
-        left: 10%;
         top: -2%;
+        right: 10%;
     }
 }
 .delivery__conteiner {

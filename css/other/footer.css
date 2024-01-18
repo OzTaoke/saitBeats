@@ -1,19 +1,20 @@
 .footer {
   position: absolute;
-  margin-top: -2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
   height: 10vh;
+  width: 100vw;
   background: #fff;
-  padding: 2% 10% 2% 15%;
+  z-index: 2;
 }
 
 .footer__addres {

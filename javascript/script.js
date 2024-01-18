@@ -23,6 +23,7 @@
      linkElement2.classList.add('humburger__menu-link');
      linkElement2.innerHTML = 'Наушники';
 
+
      const contentElement3 = document.createElement('li');
      contentElement3.classList.add('humburger__menu-item');
 
@@ -37,12 +38,14 @@
      linkElement4.classList.add('humburger__menu-link');
      linkElement4.innerHTML = 'Цвета';
 
+
      const contentElement5 = document.createElement('li');
      contentElement5.classList.add('humburger__menu-item');
 
      const linkElement5 = document.createElement('a');
      linkElement5.classList.add('humburger__menu-link');
      linkElement5.innerHTML = 'Отзывы';
+
 
      const contentElement6 = document.createElement('li');
      contentElement6.classList.add('humburger__menu-item');
@@ -58,6 +61,7 @@
      linkElement7.classList.add('humburger__menu-link');
      linkElement7.innerHTML = 'Контакты';
 
+
      const closeElement = document.createElement('div');
      closeElement.classList.add('humburger__closer');
 
@@ -65,6 +69,41 @@
          body.removeChild(overlayElement);
          body.classList.remove('body__closed');
      });
+
+     linkElement1.addEventListener('click', e => {
+        body.removeChild(overlayElement);
+        body.classList.remove('body__closed');
+     });
+
+     linkElement2.addEventListener('click', e => {
+        body.removeChild(overlayElement);
+        body.classList.remove('body__closed');
+    });
+
+    linkElement3.addEventListener('click', e => {
+        body.removeChild(overlayElement);
+        body.classList.remove('body__closed');
+    });
+
+    linkElement4.addEventListener('click', e => {
+        body.removeChild(overlayElement);
+        body.classList.remove('body__closed');
+    });
+
+    linkElement5.addEventListener('click', e => {
+        body.removeChild(overlayElement);
+        body.classList.remove('body__closed');
+    });
+
+    linkElement6.addEventListener('click', e => {
+        body.removeChild(overlayElement);
+        body.classList.remove('body__closed');
+    });
+
+    linkElement7.addEventListener('click', e => {
+        body.removeChild(overlayElement);
+        body.classList.remove('body__closed');
+    });
 
 
      overlayElement.appendChild(conteinerElement);
@@ -146,7 +185,6 @@ $('.team__content').click(e => {
     };
 });
 
-// вертикальный аккордеон
 
 // const openItemColors = itemsColors => {
 //     const conteinerColors = itemsColors.closest('.colors__item');
@@ -181,7 +219,7 @@ $('.team__content').click(e => {
 
 
 
-
+// вертикальный аккордеон
 
 const mesureWidth = item => {
     let reqItemWidth = 0;
@@ -401,10 +439,4 @@ button.addEventListener('click', e => {
     };
 
     
-
-
-   
-
-
-
-    
+// карта Яндекс

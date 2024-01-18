@@ -7,11 +7,11 @@
   display: flex;
   position: relative;
 }
-.delivery:before {
-  content: url(../../image/reviews.png);
+.delivery::before {
+  content: url(../../image/Polygon\ 2.png);
   position: absolute;
-  left: 10%;
   top: -2%;
+  right: 10%;
 }
 
 .delivery__conteiner {

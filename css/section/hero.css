@@ -1,6 +1,7 @@
 .hero {
   background: #F5F5F5;
   position: relative;
+  padding-bottom: 2rem;
 }
 .hero:after {
   content: url(../../image/hero.png);

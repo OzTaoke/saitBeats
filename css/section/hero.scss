@@ -7,6 +7,7 @@
         right: 10%;
         bottom: -2%;
     }
+    padding-bottom: 2rem;
 }
 .hero__conteiner {
     background:  url(../../image/headphones.png) bottom 50% right / 50% no-repeat;
@@ -35,38 +36,3 @@
     font-size: 1.3rem;
     margin-bottom: 3.4rem;
 }
-// .hero__dots {
-//     display: flex;
-//     flex-direction: column;
-//     position: fixed;
-//     right: 20%;
-//     top: 35%;
-// }
-// .hero__dots-item {
-//     width: 1.1rem;
-//     height: 1.1rem;
-//     border: 1px solid transparent;
-//     border-radius: 50%;
-//     position:relative;
-//     margin-bottom: 0.2rem;
-//     &:last-child {
-//         margin-bottom: 0;
-//     }
-//     &:after {
-//         content: '';
-//         width: 0.4rem;
-//         height: 0.4rem;
-//         position: absolute;
-//         background: rgba(41, 41, 41, .6);
-//         border-radius: 50%;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//     }
-// }
-// .hero__dots-item--active:after {
-//     background: #E01F3D;
-// }
-// .hero__dots-item--active {
-//     border-color: #E01F3D;
-// }
